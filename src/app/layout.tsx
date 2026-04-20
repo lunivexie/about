@@ -17,6 +17,9 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: "Lunivexie | Ángel Tech Plant-Based",
   description: "Portafolio y portal de tecnología, leaks y el lado orgánico del código.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export const runtime = "edge";
