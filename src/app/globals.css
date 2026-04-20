@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --background: #010c07;
+  --foreground: #f0fdf4;
+  
+  --mist: #f0fdf4;
+  --sprout: #022c1a;
+  --light-sage: #064e3b;
+  --soft-leaf: #86efac;
+  --flora: #4ade80;
+  --vibrant-green: #22c55e;
+  --forest: #dcfce7;
+  --dark-moss: #f0fdf4;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-mist: var(--mist);
+  --color-soft-leaf: var(--soft-leaf);
+  --color-vibrant-green: var(--vibrant-green);
+  --color-light-sage: var(--light-sage);
+}
+
+body {
+  background: radial-gradient(circle at 50% -20%, #022c1a 0%, #010c07 100%);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.glass {
+  background: rgba(2, 44, 26, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(134, 239, 172, 0.05);
+}
+
+.soft-glow {
+  box-shadow: 0 0 50px rgba(34, 197, 94, 0.08);
+}
